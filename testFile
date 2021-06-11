@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>管理员平台</title>
+  <link rel="sortcut icon" href="static/icon.ico">
+</head>
+
+<!--调试样式时，使用此body内容-->
+
+<body>
+  <div id="app">
+    <keep-alive>
+      <router-view v-if="$route.meta.keepAlive"></router-view>
+    </keep-alive>
+    <router-view v-if="!$route.meta.keepAlive"></router-view>
+  </div>
+</body>
+
+</html>
